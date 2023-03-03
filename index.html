@@ -62,22 +62,14 @@ const findRelation = (x,y) => {
 <li>Find Grades</li>
 <pre>
 const findGrades = (a) => {
-        if(a<=10){
-          return "E";
-        }
-        else if(a<=20 && a>=11){
-          return "D";
-        }
-        else if(a<=30 && a>=21){
-          return "C";
-        }
-        else if(a<=40 && a>=31){
-          return "B";
-        }
-        else if(a<=50 && a>=41){
-          return "A";
-        }
-    };
+  switch(true){
+    case(a<=10):return "E";
+    case(a<=20 && a>=11):return "D";
+    case(a<=30 && a>=21):return "C";
+    case(a<=40 && a>=31):return "B";
+    case(a<=50 && a>=41):return "A";
+    }
+};
 </pre>
 <li>Get Value</li>
 <pre>
